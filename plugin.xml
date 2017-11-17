@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.cordova.teamViewerSDK"
+        id="com.cordova.teamviewersdk"
         version="0.1.0">
 
   <name>Team Viewer SDK</name>
@@ -18,7 +18,7 @@
     <!-- SDK methods mapping -->
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="TeamViewerSDK">
-          <param name="android-package" value="com.cordova.teamViewerSDK.TeamViewerSDK" />
+          <param name="android-package" value="com.cordova.teamviewersdk.TeamViewerSDK" />
       </feature>
     </config-file>
 
@@ -27,11 +27,12 @@
            <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     </config-file>
 
-    <source-file src="src/android/TeamViewerSDK.java" target-dir="src/com/cordova/teamViewerSDK"/>
+    <source-file src="src/android/TeamViewerSDK.java" target-dir="src/com/cordova/TeamViewerSDK"/>
 
     <!-- adding team viewer sdk -->
     <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
     <resource-file src="lib/android/ScreenSharingSDK.aar" target="lib/android/ScreenSharingSDK.aar" />
+
   </platform>
 
   <!-- ios -->

@@ -1,4 +1,4 @@
-package com.cordova.teamViewerSDK;
+package com.cordova.teamviewersdk;
 
 import org.apache.cordova.CordovaPlugin;
 
